@@ -7,7 +7,7 @@ server_ip = argv[2]
 server_port = int(argv[3])
 
 # chunk_size = 1024 # 1KB per packet
-chunk_size = 1024
+chunk_size = 65000
 client_timeout = 1 # ACK Timeout
 
 file_data = open(file_path, "rb").read()

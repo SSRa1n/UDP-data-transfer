@@ -14,7 +14,7 @@ print("waiting...")
 
 while True:
     try:
-        data, addr = sock.recvfrom(1030) # 1024 + 6 bytes for header
+        data, addr = sock.recvfrom(65507) # 1024 + 6 bytes for header
 
         try:
             header, content = data.split(b":", 1) # structure : "seq_num:file_path" | 1 split maximum
